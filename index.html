@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For Kritika 💖</title>
+</head>
+<body style="margin:0;display:flex;justify-content:center;align-items:center;height:100vh;
+background:linear-gradient(135deg,#ff9a9e,#fad0c4);font-family:cursive;">
+
+  <div style="text-align:center;background:rgba(255,255,255,0.9);
+  padding:30px;border-radius:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);position:relative;">
+
+    <h1>Hey Kritika 💕🌸</h1>
+    <p style="font-size:32px;">Will you be my Valentine? 💘🥰</p>
+    <p style="font-size:20px;">You already make my heart smile 💖✨</p>
+
+    <div style="margin-top:25px;">
+      <button onclick="alert('YAYYY!! 🥰💖✨\nYou just made my heart the happiest 💕🌹')"
+      style="font-size:22px;padding:10px 25px;margin:10px;
+      border:none;border-radius:30px;
+      background:#ff4d6d;color:white;cursor:pointer;">
+        Yes 💝😍
+      </button>
+
+      <button id="noBtn"
+      style="font-size:22px;padding:10px 25px;
+      border:none;border-radius:30px;
+      background:#adb5bd;color:white;
+      cursor:pointer;position:absolute;">
+        No 🙈💔
+      </button>
+    </div>
+  </div>
+
+<script>
+const noBtn = document.getElementById("noBtn");
+
+function moveButton() {
+  const x = Math.random() * (window.innerWidth - 120);
+  const y = Math.random() * (window.innerHeight - 60);
+  noBtn.style.left = x + "px";
+  noBtn.style.top = y + "px";
+}
+
+noBtn.addEventListener("mouseenter", moveButton);
+noBtn.addEventListener("touchstart", moveButton);
+</script>
+
+</body>
+</html>
